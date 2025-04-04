@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Rescue Center - HelpHub</title>
+</head>
+<body>
+    <header>
+        <h1><img src="images/logo.png" alt="HelpHub Logo" width="150"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="charity-header">
+            <img src="images/animal-rescue-banner.jpg" alt="Animal Rescue Center Banner" width="800">
+            <h2>Hope Animal Shelter</h2>
+            <p class="tagline">"Helping pets find forever homes since 2010"</p>
+            
+            <div class="charity-contact">
+                <p>📍 123 Pet Lane, Anytown, ST 12345</p>
+                <p>📞 (555) 123-4567</p>
+                <p>🌐 <a href="http://www.hopeanimals.org">www.hopeanimals.org</a></p>
+            </div>
+        </section>
+
+        <section class="about-charity">
+            <h3>About Us</h3>
+            <p>Founded in 2010, Hope Animal Shelter has rescued over 1,000 animals and helped them find loving homes. Our mission is to provide shelter, medical care, and rehabilitation to abandoned and abused animals while working to find them permanent homes through our adoption programs.</p>
+            <p>We rely entirely on donations and volunteer support to continue our important work in the community.</p>
+        </section>
+
+        <section class="volunteer-opportunities">
+            <h3>Volunteer Opportunities</h3>
+            <ul>
+                <li>
+                    <strong>Dog Walkers</strong>
+                    <p>Monday-Friday, 9am-5pm</p>
+                    <p>Help our dogs get exercise and socialization</p>
+                </li>
+                <li>
+                    <strong>Adoption Assistants</strong>
+                    <p>Weekends, 10am-4pm</p>
+                    <p>Help potential adopters meet our animals</p>
+                </li>
+                <li>
+                    <strong>Fundraising Team</strong>
+                    <p>Flexible hours</p>
+                    <p>Help organize events and campaigns</p>
+                </li>
+            </ul>
+
+            <button id="volunteerBtn">Volunteer Now</button>
+
+            <div id="volunteerForm" style="display:none;">
+                <h4>Volunteer Application</h4>
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="interest">Volunteer Interest:</label>
+                    <select id="interest" name="interest">
+                        <option value="dog-walking">Dog Walking</option>
+                        <option value="adoption">Adoption Assistance</option>
+                        <option value="fundraising">Fundraising</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="availability">Availability:</label>
+                    <textarea id="availability" name="availability"></textarea>
+                    
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HelpHub</p>
+        <nav>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+    </footer>
+
+    <script>
+        // Simple JavaScript to show the volunteer form
+        document.getElementById('volunteerBtn').addEventListener('click', function() {
+            document.getElementById('volunteerForm').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
