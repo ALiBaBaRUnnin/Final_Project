@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HelpHub - Home</title>
+    <title>Find Charities - HelpHub</title>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>HelpHub Logo</h1>
+        <h1><img src="images/logo.png" alt="HelpHub Logo" width="150"></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,59 +18,63 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h2>Connect with Local Charities</h2>
-            <p>Find volunteer opportunities in your area</p>
-            
-            <div class="search">
-                <input type="text" placeholder="Search by location...">
-                <button>Browse Charities</button>
-            </div>
+        <section class="search-filters">
+            <h2>Find Charities Near You</h2>
+            <form>
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="any">Anywhere</option>
+                    <option value="downtown">Downtown</option>
+                    <option value="westside">Westside</option>
+                    <option value="eastend">East End</option>
+                </select>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All Categories</option>
+                    <option value="animals">Animals</option>
+                    <option value="food">Food/Hunger</option>
+                    <option value="youth">Youth</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
         </section>
 
-        <!-- How It Works Section -->
-        <section class="how-it-works">
-            <h3>How It Works</h3>
-            <ol>
-                <li>Search for charities in your area</li>
-                <li>Select an opportunity that matches your interests</li>
-                <li>Volunteer and make a difference</li>
-            </ol>
-        </section>
+        <section class="charity-list">
+            <article class="charity">
+                <img src="images/animal-rescue.jpg" alt="Animal Rescue Center" width="150">
+                <div class="charity-info">
+                    <h3>Animal Rescue Center</h3>
+                    <p>Location: Downtown</p>
+                    <p>Helping animals in need since 2015. Volunteers needed for dog walking, adoption events, and fundraising.</p>
+                    <a href="charity_profile.html">View Profile</a>
+                </div>
+            </article>
 
-        <!-- Featured Charities Section -->
-        <section class="featured-charities">
-            <h3>Featured Charities</h3>
-            
-            <div class="charity-grid">
-                <!-- Charity 1 -->
-                <article class="charity-card">
-                    <h4>Animal Rescue</h4>
-                    <p>Animal Rescue Center</p>
-                    <a href="animal-rescue.html">Learn More</a>
-                </article>
-                
-                <!-- Charity 2 -->
-                <article class="charity-card">
-                    <h4>Food Bank</h4>
-                    <p>Community Food Bank</p>
-                    <a href="food-bank.html">Learn More</a>
-                </article>
-                
-                <!-- Charity 3 -->
-                <article class="charity-card">
-                    <h4>Youth Center</h4>
-                    <p>Youth Mentoring Program</p>
-                    <a href="youth-center.html">Learn More</a>
-                </article>
-            </div>
+            <article class="charity">
+                <img src="images/food-bank.jpg" alt="Community Food Bank" width="150">
+                <div class="charity-info">
+                    <h3>Community Food Bank</h3>
+                    <p>Location: Westside</p>
+                    <p>Providing meals to families in need. Weekly volunteer shifts available for food sorting and distribution.</p>
+                    <a href="charity_profile.html">View Profile</a>
+                </div>
+            </article>
+
+            <article class="charity">
+                <img src="images/youth-center.jpg" alt="Youth Mentoring Program" width="150">
+                <div class="charity-info">
+                    <h3>Youth Mentoring Program</h3>
+                    <p>Location: East End</p>
+                    <p>Empowering young minds through education and mentorship. Volunteers needed for tutoring and after-school programs.</p>
+                    <a href="charity_profile.html">View Profile</a>
+                </div>
+            </article>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 HelpHub</p>
         <nav>
