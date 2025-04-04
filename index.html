@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HelpHub - Connect with Local Charities</title>
+    <title>HelpHub - Home</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1><img src="images/logo.png" alt="HelpHub Logo" width="150"></h1>
+        <h1>HelpHub Logo</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,16 +19,20 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <h2>Connect with Local Charities</h2>
             <p>Find volunteer opportunities in your area</p>
-            <form>
+            
+            <div class="search">
                 <input type="text" placeholder="Search by location...">
-                <button type="submit">Browse Charities</button>
-            </form>
+                <button>Browse Charities</button>
+            </div>
         </section>
 
+        <!-- How It Works Section -->
         <section class="how-it-works">
             <h3>How It Works</h3>
             <ol>
@@ -37,28 +42,36 @@
             </ol>
         </section>
 
+        <!-- Featured Charities Section -->
         <section class="featured-charities">
             <h3>Featured Charities</h3>
+            
             <div class="charity-grid">
-                <article>
-                    <img src="images/animal-rescue.jpg" alt="Animal Rescue" width="200">
-                    <h4>Animal Rescue Center</h4>
-                    <a href="charity_profile.html">Learn More</a>
+                <!-- Charity 1 -->
+                <article class="charity-card">
+                    <h4>Animal Rescue</h4>
+                    <p>Animal Rescue Center</p>
+                    <a href="animal-rescue.html">Learn More</a>
                 </article>
-                <article>
-                    <img src="images/food-bank.jpg" alt="Food Bank" width="200">
-                    <h4>Community Food Bank</h4>
-                    <a href="charity_profile.html">Learn More</a>
+                
+                <!-- Charity 2 -->
+                <article class="charity-card">
+                    <h4>Food Bank</h4>
+                    <p>Community Food Bank</p>
+                    <a href="food-bank.html">Learn More</a>
                 </article>
-                <article>
-                    <img src="images/youth-center.jpg" alt="Youth Center" width="200">
-                    <h4>Youth Mentoring Program</h4>
-                    <a href="charity_profile.html">Learn More</a>
+                
+                <!-- Charity 3 -->
+                <article class="charity-card">
+                    <h4>Youth Center</h4>
+                    <p>Youth Mentoring Program</p>
+                    <a href="youth-center.html">Learn More</a>
                 </article>
             </div>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 HelpHub</p>
         <nav>
